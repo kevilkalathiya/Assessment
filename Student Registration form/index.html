@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration from</title>
+    <link rel="icon" href="image/k1.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Student Registration From</h1>
+    <form action="">
+      <span>First Name : </span>&nbsp;<input
+        type="text"
+        required
+        pattern="[a-zA-Z]{3,6}"
+        placeholder="Enter your first name"
+        title=" minimum 3 and maximum 6 Alphabets..!"
+      /><br />
+      <span>Last Name : </span>
+      <input type="text" required placeholder="Enter your last name" /><br />
+      <span>Email : </span>
+      <input type="email" required placeholder="it should contain @.." /><br />
+      <span>Mobile : </span>
+      <input
+        type="text"
+        required
+        placeholder="only 10 digit are allowed"
+        pattern="[0-9]{10}"
+        title="only 10 digit number"
+      /><br />
+      <span>Gender : </span>
+      <input type="radio" name="gender" />
+      <p>Male</p>
+      <input type="radio" name="gender" />
+      <p>Female</p>
+      <br />
+      <span>Date Of Birth : </span>
+      <input type="date" required /><br />
+      <div class="text">
+        <div><span class="address">Address : </span></div>
+        <textarea name="" id="" cols="30" rows="10" required></textarea><br />
+      </div>
+      <span>City : </span>
+      <input type="text" required /><br />
+      <span>Area PIN : </span>
+      <input type="text" required pattern="[0-9]+" title="only number" /><br />
+      <span>State : </span>
+      <input type="text" required /><br />
+      <span>Qualification : </span>
+      <select name="" id="" required>
+        <option value="" hidden>Select Qualification</option>
+        <option value="">Graduate</option>
+        <option value="">Under Graduate</option></select
+      ><br />
+      <span>Specialization : </span>
+      <input type="checkbox" name="" id="" />
+      <p>Computer Science</p>
+      <br />
+      <input type="checkbox" name="" id="" class="left" />
+      <p>Information Technology</p>
+      <br />
+      <input type="checkbox" name="" id="" class="left" />
+      <p>Computer Architecture</p>
+      <br />
+      <input type="checkbox" name="" id="" class="left" />
+      <p>Tele Communication</p>
+      <br />
+      <span>Password : </span>
+      <input type="password" required /><br />
+      <input type="submit" value="Registered" />
+    </form>
+  </body>
+</html>
